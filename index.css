@@ -1,3 +1,23 @@
+
+html{
+    
+}
+body{
+
+}
+
+.profile-container{
+    border-radius : 100dvh;
+    overflow: hidden;
+    aspect-ratio: 1/1;
+    width : 25%;
+}
+
+.nanum-gothic-coding-regular {
+    font-family: "Nanum Gothic Coding", serif;
+    font-weight: 400;
+    font-style: normal;
+}  
 .flex-row,.flex-column{
     display:flex;
 }
