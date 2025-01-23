@@ -1,36 +1,74 @@
 :root{
     --document-width : 1280px;
-    --theme-first-color : rgba(246, 77, 77, 0.723);
+    --theme-first-color : #F2EFE7;
     --theme-grey-color : #808080;
     --theme-border-radius : 12px;
+    --navbar-top-height : 54px;
 }
 
 body{
-    overflow: auto;
+    overflow : hidden;
+    margin :0;
+}
+p,h1,h2,h3,h4,h5,h6{
+    margin : 4px;
+}
+.left-navbar{
+    justify-content: start !important;
+}
+.navbar-top{
+    height : var(--navbar-top-height);
+}
+.absolute{
+    position: absolute;
 }
 
 .router{
     min-width : var(--document-width)
 }
 
+.scroll-x{
+    overflow-x: auto;
+}
+.scroll-y{
+    overflow-y : auto;
+}
 
 .width-hr{
+    background-color : var(--theme-first-color);
+}
+.width-hr,.width-hr-abs{
     border : 0;
     width : 100%;
-    height : 2px;
-    background-color : var(--theme-grey-color);
+    height : 1px;
+    margin : 0;
+}
+.width-hr-abs{
+    border : 0;
+    width : 100%;
+    height : 1px;
+    background-color : white
 }
 
 .grey-round-border{
     border-radius : var(--theme-border-radius);
-    border : 1px solid var(--theme-grey-color);
+    border : 1px solid var(--theme-first-color);
+}
+.fill-first{
+    background-color : var(--theme-first-color);
+}
+.fill-white{
+    background-color: white;
+}
+.color-grey{
+    color : var(--theme-grey-color);
 }
 
 .profile-container{
-    border-radius : 100dvh;
+    border-radius : 360px;
     overflow: hidden;
-    height : 192px;
-    width : 192px;
+    height : 240px;
+    width : 240px;
 }
 .profile-image{
     object-fit: cover;
@@ -63,7 +101,10 @@ body{
     width : 50%;
 }
 .quarter-width{
-    width : 25%;
+    min-width : 25%;
+}
+.max-height{
+    height : calc(100dvh - var(--navbar-top-height));
 }
 .half-height{
     height : 50%;
@@ -83,5 +124,8 @@ body{
 }
 .flex-space-bet{
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between !important;
+}
+.flex-wrap{
+    flex-wrap:wrap;
 }
