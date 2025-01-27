@@ -1,17 +1,21 @@
 :root{
-    --document-width : 1280px;
+    --document-width : 960px;
     --theme-first-color : #F2EFE7;
     --theme-grey-color : #808080;
     --theme-border-radius : 12px;
-    --navbar-top-height : 54px;
+    --navbar-top-height : 192px;
 }
 
 body{
     overflow : hidden;
-    margin :0;
+    margin : auto;
+    width : var(--document-width);
+    border-right : 1px solid var(--theme-first-color);
+    border-left : 1px solid var(--theme-first-color);
 }
 p,h1,h2,h3,h4,h5,h6{
     margin : 4px;
+    font-weight: normal;
 }
 .left-navbar{
     justify-content: start !important;
@@ -24,7 +28,7 @@ p,h1,h2,h3,h4,h5,h6{
 }
 
 .router{
-    min-width : var(--document-width)
+    
 }
 
 .scroll-x{
@@ -67,8 +71,8 @@ p,h1,h2,h3,h4,h5,h6{
 .profile-container{
     border-radius : 360px;
     overflow: hidden;
-    height : 240px;
-    width : 240px;
+    height : 148px;
+    width : 148px;
 }
 .profile-image{
     object-fit: cover;
@@ -81,7 +85,6 @@ p,h1,h2,h3,h4,h5,h6{
 
 .nanum-gothic-coding-regular {
     font-family: "Nanum Gothic Coding", serif;
-    font-weight: 400;
     font-style: normal;
 }
 
